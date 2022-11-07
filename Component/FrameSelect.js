@@ -12,6 +12,7 @@ export default function FrameSelect() {
         justifyContent: "center",
         alignItem: "center",
         paddingVertical: 70,
+        backgroundColor: "#edebeb"
       }}
     >
       <View
@@ -20,6 +21,8 @@ export default function FrameSelect() {
           alignItem: "center",
           flexDirection: "row",
           marginVertical: 30,
+          height:"50%",
+          backgroundColor: "#edebeb"
         }}
       >
         <TouchableOpacity
@@ -28,9 +31,10 @@ export default function FrameSelect() {
               frame: 0,
             });
           }}
+          style={{width:"50%"}}
         >
           <Image
-            style={{ width: 170, height: 252, marginHorizontal: 10 }}
+            style={{marginHorizontal:"5%",maxWidth:"90%", maxHeight:"100%"}}
             source={require("../img/frame1.png")}
           />
         </TouchableOpacity>
@@ -40,9 +44,10 @@ export default function FrameSelect() {
               frame: 1,
             });
           }}
+          style={{width:"50%"}}
         >
           <Image
-            style={{ width: 170, height: 252, marginHorizontal: 10 }}
+            style={{marginHorizontal:"5%",maxWidth:"90%", maxHeight:"100%"}}
             source={require("../img/frame2.png")}
           />
         </TouchableOpacity>
@@ -53,6 +58,8 @@ export default function FrameSelect() {
           alignItem: "center",
           flexDirection: "row",
           marginVertical: 30,
+          height:"50%",
+          backgroundColor: "#edebeb"
         }}
       >
         <TouchableOpacity
@@ -61,9 +68,10 @@ export default function FrameSelect() {
               frame: 2,
             });
           }}
+          style={{width:"50%"}}
         >
           <Image
-            style={{ width: 170, height: 252, marginHorizontal: 10 }}
+            style={{marginHorizontal:"5%",maxWidth:"90%", maxHeight:"100%"}}
             source={require("../img/frame3.png")}
           />
         </TouchableOpacity>
@@ -73,9 +81,10 @@ export default function FrameSelect() {
               frame: 3,
             });
           }}
+          style={{width:"50%"}}
         >
           <Image
-            style={{ width: 170, height: 252, marginHorizontal: 10 }}
+            style={{marginHorizontal:"5%",maxWidth:"90%", maxHeight:"100%"}}
             source={require("../img/frame4.png")}
           />
         </TouchableOpacity>

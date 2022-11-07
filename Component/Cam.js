@@ -20,10 +20,10 @@ export default function Cam({ navigation, route }) {
   const [image4, setImage4] = useState(null);
 
   const bg = [
-    require("../img/frame1.png"),
-    require("../img/frame2.png"),
-    require("../img/frame3.png"),
-    require("../img/frame4.png"),
+    require("../img/1.png"),
+    require("../img/2.png"),
+    require("../img/3.png"),
+    require("../img/4.png"),
   ];
 
   const ref = useRef();
@@ -91,7 +91,7 @@ export default function Cam({ navigation, route }) {
     <View style={styles.container}>
       <View
         style={{
-          width: 360,
+          width: 369,
           marginVertical: 20,
           flexDirection: "row",
           justifyContent: "space-between",
@@ -107,7 +107,7 @@ export default function Cam({ navigation, route }) {
           <ViewShot ref={ref} options={{ format: "jpg", quality: 0.9 }}>
             <View>
               <ImageBackground
-                style={{ width: 400, height: 600 }}
+                style={{ width: 650, height: 962 }}
                 source={bg[route.params.frame]}
               >
                 <View>
@@ -116,13 +116,13 @@ export default function Cam({ navigation, route }) {
                       justifyContent: "center",
                       alignItem: "center",
                       flexDirection: "row",
-                      marginTop: 97,
+                      marginTop: 155,
                     }}
                   >
                     <Image
                       style={{
-                        width: 170,
-                        height: 227,
+                        width: 277,
+                        height: 369,
                         transform: [{ scaleX: -1 }],
                         marginRight: 8,
                       }}
@@ -130,8 +130,8 @@ export default function Cam({ navigation, route }) {
                     />
                     <Image
                       style={{
-                        width: 170,
-                        height: 227,
+                        width: 277,
+                        height: 369,
                         transform: [{ scaleX: -1 }],
                         marginLeft: 8,
                       }}
@@ -148,8 +148,8 @@ export default function Cam({ navigation, route }) {
                   >
                     <Image
                       style={{
-                        width: 170,
-                        height: 227,
+                        width: 277,
+                        height: 369,
                         transform: [{ scaleX: -1 }],
                         marginRight: 8,
                       }}
@@ -157,8 +157,8 @@ export default function Cam({ navigation, route }) {
                     />
                     <Image
                       style={{
-                        width: 170,
-                        height: 227,
+                        width: 277,
+                        height: 369,
                         transform: [{ scaleX: -1 }],
                         marginLeft: 8,
                       }}
@@ -195,13 +195,13 @@ export default function Cam({ navigation, route }) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
     justifyContent: "center",
     alignItems: "center",
+    backgroundColor: "#edebeb"
   },
   camera: {
-    width: 360,
-    height: 480,
+    width: 720,
+    height: 960,
     position: "relative",
   },
   takenImage: {
